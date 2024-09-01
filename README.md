@@ -27,81 +27,81 @@ To solve  classification problem with the Tanzanian Water Wells dataset, we'll p
 
 #### Common Columns in the Tanzania Water Wells Dataset:
 
-id: A unique identifier for each well.
+<b>id:</b> A unique identifier for each well.
 
-amount_tsh: The total static head (amount of water) in the well in liters.
+<b>amount_tsh:</b> The total static head (amount of water) in the well in liters.
 
-date_recorded: The date the information was recorded.
+<b>date_recorded:</b> The date the information was recorded.
 
-funder: Who funded the well.
+<b>funder:</b> Who funded the well.
 
-gps_height: Altitude of the well.
+<b>gps_height:</b> Altitude of the well.
 
-installer: Who installed the well.
+<b>installer:</b> Who installed the well.
 
-longitude: Longitude of the well's location.
+<b>longitude:</b> Longitude of the well's location.
 
-latitude: Latitude of the well's location.
+<b>latitude:</b> Latitude of the well's location.
 
-wpt_name: The name of the waterpoint.
+<b>wpt_name:</b> The name of the waterpoint.
 
-basin: The basin where the well is located.
+<b>basin: </b>The basin where the well is located.
 
-subvillage: The sub-village where the well is located.
+<b>subvillage:</b> The sub-village where the well is located.
 
-region: The region where the well is located.
+<b>region:</b> The region where the well is located.
 
-district_code: The district code for the well's location.
+<b>istrict_code: </b>The district code for the well's location.
 
-lga: The local government area for the well.
+<b>lga:</b> The local government area for the well.
 
-ward: The ward where the well is located.
+<b>ward:</b> The ward where the well is located.
 
-population: The population around the well.
+<b>population:</b> The population around the well.
 
-public_meeting: Boolean indicating if there was a public meeting.
+<b>public_meeting:</b> Boolean indicating if there was a public meeting.
 
-recorded_by: Who recorded the data (almost always 'Government').
+<b>recorded_by:</b> Who recorded the data (almost always 'Government').
 
-scheme_management: Who operates the waterpoint.
+<b>scheme_management:</b> Who operates the waterpoint.
 
-scheme_name: The name of the water scheme.
+<b>scheme_name:</b> The name of the water scheme.
 
-permit: Boolean indicating whether the well has a permit.
+<b>permit:</b> Boolean indicating whether the well has a permit.
 
-construction_year: The year the well was constructed.
+<b>construction_year:</b> The year the well was constructed.
 
-extraction_type: The type of extraction method used.
+<b>extraction_type:</b> The type of extraction method used.
 
-extraction_type_group: Grouped type of extraction method.
+<b>extraction_type_group:</b> Grouped type of extraction method.
 
-extraction_type_class: Class of extraction method.
+<b>extraction_type_class:</b> Class of extraction method.
 
-management: Who manages the well.
+<b>management:</b> Who manages the well.
 
-management_group: Group of management.
+<b>management_group:</b> Group of management.
 
-payment: The type of payment system used.
+<b>payment:</b> The type of payment system used.
 
-payment_type: Type of payment.
+<b>payment_type: </b>Type of payment.
 
-water_quality: The quality of water at the well.
+<b>water_quality:</b> The quality of water at the well.
 
-quality_group: Grouped quality of water.
+<b>uality_group:</b> Grouped quality of water.
 
-quantity: The quantity of water.
+<b>quantity:</b> The quantity of water.
 
-quantity_group: Grouped quantity of water.
+<b>quantity_group:</b> Grouped quantity of water.
 
-source: The source of water.
+<b>source:</b> The source of water.
 
-source_type: The type of water source.
+<b>source_type:</b> The type of water source.
 
-source_class: The class of water source.
+<b>source_class:</b> The class of water source.
 
-waterpoint_type: The type of waterpoint.
+<b>waterpoint_type:</b> The type of waterpoint.
 
-waterpoint_type_group: Grouped type of waterpoint.
+<b>waterpoint_type_group:</b> Grouped type of waterpoint.
 
 #### Modelling
 
@@ -111,41 +111,41 @@ The logistic regression model performance shows moderate success with an accurac
 
 Key Metrics
 
-Accuracy (0.6743): This indicates that the model correctly predicted the class of the wells 67.43% of the time. 
+<b>Accuracy (0.6743):</b> This indicates that the model correctly predicted the class of the wells 67.43% of the time. 
 
-Precision (0.6413): Precision tells us how many of the wells predicted as a certain class (e.g., functional, non-functional) were actually correct. A precision of 64.13% means that when the model predicts a certain class, it is correct about 64% of the time.
+<b>Precision (0.6413):</b> Precision tells us how many of the wells predicted as a certain class (e.g., functional, non-functional) were actually correct. A precision of 64.13% means that when the model predicts a certain class, it is correct about 64% of the time.
 
-Recall (0.6743): Recall indicates how well the model captures all the relevant cases. A recall of 67.43% shows that the model correctly identifies 67% of the actual positive cases.
+<b>Recall (0.6743):</b> Recall indicates how well the model captures all the relevant cases. A recall of 67.43% shows that the model correctly identifies 67% of the actual positive cases.
 
-F1-score (0.6435): The F1-score is the harmonic mean of precision and recall, balancing the two. A score of 64.35% reflects a reasonable trade-off between precision and recall.
-
-#### Confusion Matrix
-
-The confusion matrix breaks down the performance by individual class predictions:
-
-Class 0 (Functional Wells): The model predicted 3,978 wells correctly, but misclassified 729 wells as non-functional and 4 wells as "functional needs repair." The model performs best for this class with a high recall (84%).
-
-Class 1 (Functional Needs Repair Wells): The model struggles with this class, predicting only 9 wells correctly out of 603. This is reflected in the low precision (26%) and recall (1%).
-
-Class 2 (Non-Functional Wells): The model correctly predicts 1,510 wells as non-functional but misclassifies 1,306 wells as functional. The recall for this class is relatively low at 53%.
+<b>F1-score (0.6435): </b>The F1-score is the harmonic mean of precision and recall, balancing the two. A score of 64.35% reflects a reasonable trade-off between precision and recall.
 
 #### Confusion Matrix
 
 The confusion matrix breaks down the performance by individual class predictions:
 
-Class 0 (Functional Wells): The model predicted 3,978 wells correctly, but misclassified 729 wells as non-functional and 4 wells as "functional needs repair." The model performs best for this class with a high recall (84%).
+<b>Class 0 (Functional Wells):</b> The model predicted 3,978 wells correctly, but misclassified 729 wells as non-functional and 4 wells as "functional needs repair." The model performs best for this class with a high recall (84%).
 
-Class 1 (Functional Needs Repair Wells): The model struggles with this class, predicting only 9 wells correctly out of 603. This is reflected in the low precision (26%) and recall (1%).
+<b>Class 1 (Functional Needs Repair Wells):</b> The model struggles with this class, predicting only 9 wells correctly out of 603. This is reflected in the low precision (26%) and recall (1%).
 
-Class 2 (Non-Functional Wells): The model correctly predicts 1,510 wells as non-functional but misclassifies 1,306 wells as functional. The recall for this class is relatively low at 53%.
+<b>Class 2 (Non-Functional Wells): </b>The model correctly predicts 1,510 wells as non-functional but misclassifies 1,306 wells as functional. The recall for this class is relatively low at 53%.
+
+#### Confusion Matrix
+
+The confusion matrix breaks down the performance by individual class predictions:
+
+<b>Class 0 (Functional Wells): </b>The model predicted 3,978 wells correctly, but misclassified 729 wells as non-functional and 4 wells as "functional needs repair." The model performs best for this class with a high recall (84%).
+
+<b>Class 1 (Functional Needs Repair Wells):</b> The model struggles with this class, predicting only 9 wells correctly out of 603. This is reflected in the low precision (26%) and recall (1%).
+
+<b>Class 2 (Non-Functional Wells): </b>The model correctly predicts 1,510 wells as non-functional but misclassifies 1,306 wells as functional. The recall for this class is relatively low at 53%.
 
 #### Classification Report
 
-Class 0 (Functional Wells): This class has the highest precision and recall. The model performs well in detecting functional wells but struggles with classifying the other two categories.
+<b>Class 0 (Functional Wells):</b> This class has the highest precision and recall. The model performs well in detecting functional wells but struggles with classifying the other two categories.
 
-Class 1 (Functional Needs Repair Wells): This class has poor performance, with very low precision (26%) and recall (1%). The model is failing to identify this class effectively.
+<b>Class 1 (Functional Needs Repair Wells): </b>This class has poor performance, with very low precision (26%) and recall (1%). The model is failing to identify this class effectively.
 
-Class 2 (Non-Functional Wells): The model has a moderate performance on this class, with decent precision (64%) but lower recall (53%).
+<b>Class 2 (Non-Functional Wells):</b> The model has a moderate performance on this class, with decent precision (64%) but lower recall (53%).
 
 
 #### Summary
@@ -157,30 +157,30 @@ The Decision Tree model performs notably better than the logistic regression mod
 
 Key Metrics
 
-Accuracy (0.7658): The model has a higher accuracy compared to logistic regression, correctly predicting the class of the wells about 77% of the time.
+<b> Accuracy (0.7658):</b> The model has a higher accuracy compared to logistic regression, correctly predicting the class of the wells about 77% of the time.
 
-Precision (0.7672): Precision is fairly high, especially for the functional and non-functional wells. It means that, when the model predicts a certain class, it's correct about 77% of the time overall.
+<b> Precision (0.7672):</b> Precision is fairly high, especially for the functional and non-functional wells. It means that, when the model predicts a certain class, it's correct about 77% of the time overall.
 
-Recall (0.7658): This indicates the model correctly identifies 77% of the actual cases across all classes, showing a good ability to detect true positives.
+<b> Recall (0.7658): </b>This indicates the model correctly identifies 77% of the actual cases across all classes, showing a good ability to detect true positives.
 
-F1-score (0.7663): The F1-score, which balances precision and recall, is consistent with the other metrics, reflecting a strong performance across the board.
+<b> F1-score (0.7663):</b> The F1-score, which balances precision and recall, is consistent with the other metrics, reflecting a strong performance across the board.
 
 #### Confusion Matrix
 The confusion matrix breaks down the predictions for each class:
 
-Class 0 (Functional Wells): The model correctly predicts 3,809 functional wells but misclassifies 267 wells as "functional needs repair" and 635 wells as non-functional. This class has strong performance with both high precision and recall.
+<b>Class 0 (Functional Wells):</b> The model correctly predicts 3,809 functional wells but misclassifies 267 wells as "functional needs repair" and 635 wells as non-functional. This class has strong performance with both high precision and recall.
 
-Class 1 (Functional Needs Repair Wells): The model correctly predicts 223 of the wells needing repair, but 276 wells are wrongly classified as functional, and 104 are misclassified as non-functional. The performance for this class is moderate, but better than logistic regression.
+<b>Class 1 (Functional Needs Repair Wells):</b> The model correctly predicts 223 of the wells needing repair, but 276 wells are wrongly classified as functional, and 104 are misclassified as non-functional. The performance for this class is moderate, but better than logistic regression.
 
-Class 2 (Non-Functional Wells): The model predicts 2,211 non-functional wells correctly, but misclassifies 509 as functional and 118 as needing repair. The model is doing well at identifying non-functional wells, with a high recall of 78%.
+<b>Class 2 (Non-Functional Wells):</b> The model predicts 2,211 non-functional wells correctly, but misclassifies 509 as functional and 118 as needing repair. The model is doing well at identifying non-functional wells, with a high recall of 78%.
 
 #### Classification Report
 
-Class 0 (Functional Wells): The precision (83%) and recall (81%) for functional wells are strong, suggesting the model performs well at identifying wells that are in working condition. The F1-score of 82% reflects a balanced performance for this class.
+<b>Class 0 (Functional Wells):</b>  The precision (83%) and recall (81%) for functional wells are strong, suggesting the model performs well at identifying wells that are in working condition. The F1-score of 82% reflects a balanced performance for this class.
 
-Class 1 (Functional Needs Repair Wells): Precision (37%) and recall (37%) are much lower for this class. While the performance is still limited, it is better than what we saw in logistic regression. There’s still considerable room for improvement, particularly for identifying wells needing repair.
+<b>Class 1 (Functional Needs Repair Wells):</b>  Precision (37%) and recall (37%) are much lower for this class. While the performance is still limited, it is better than what we saw in logistic regression. There’s still considerable room for improvement, particularly for identifying wells needing repair.
 
-Class 2 (Non-Functional Wells): The model performs well in this class, with precision (75%) and recall (78%) reflecting its good ability to detect non-functional wells. The F1-score of 76% shows a good balance between precision and recall.
+<b>Class 2 (Non-Functional Wells):</b>  The model performs well in this class, with precision (75%) and recall (78%) reflecting its good ability to detect non-functional wells. The F1-score of 76% shows a good balance between precision and recall.
 
 ![alt text](image.png)
 
@@ -217,18 +217,18 @@ These curves help us visually compare which model is better at predicting the we
 
 Based on the findings and model evaluations from the Tanzania Water Wells project, the following recommendations can be made:
 
-1. Prioritize Non-Functional Wells for Maintenance and Repair
+1. <b> Prioritize Non-Functional Wells for Maintenance and Repair</b> 
 
 The Decision Tree model accurately classifies non-functional wells with a recall of 78%, making it a reliable tool for identifying wells that require immediate attention. NGOs or government agencies can use this model to prioritize their resources and allocate them to the areas most in need of intervention. This will enhance efforts in providing sustainable access to clean water by ensuring non-functional wells are promptly repaired.
 
-2. Further Investigate Wells Needing Repair
+2. <b> Further Investigate Wells Needing Repair</b> 
 
 The model struggles with identifying wells that are functional but need repairs, with a precision and recall around 37%. This lower performance suggests that additional data collection or feature engineering might be needed to better understand this class. It is recommended that stakeholders investigate what additional factors might be contributing to the need for repair, such as environmental conditions, maintenance history, or usage patterns. This data could then be incorporated into future models for improved predictions.
 
-3. Implement Predictive Maintenance Programs
+3. <b> Implement Predictive Maintenance Programs</b> 
 
 Based on the models’ ability to predict well functionality, stakeholders can develop predictive maintenance programs. By monitoring wells predicted to be at risk of failure or needing repair, proactive measures can be taken to avoid costly breakdowns. This approach could minimize downtime for communities dependent on these water sources and lead to more efficient management of water resources.
 
-4. Long-Term Policy Planning
+4. <ttb> Long-Term Policy Planning</b> 
 
 Insights from the model can inform policy decisions, particularly regarding where to invest in new well construction or repair efforts. By analyzing which features are most influential in predicting well failures (such as pump type, installation year, and geographical location), policy makers can make data-driven decisions about future well installations and maintenance schedules.
