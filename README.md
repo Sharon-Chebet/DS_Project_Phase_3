@@ -184,6 +184,22 @@ Class 2 (Non-Functional Wells): The model performs well in this class, with prec
 
 ![alt text](image-1.png)
 
+#### ROC Curves for Logistic Regression and Decision Tree
+
+The ROC (Receiver Operating Characteristic) curve is a graphical tool used to evaluate the performance of our models, specifically how well they distinguish between different conditions of water wells. Each curve represents the trade-off between the true positive rate (sensitivity) and the false positive rate (fallout) for each class.
+
+In the graph, we have two sets of ROC curves:
+
+Solid lines represent the performance of our Logistic Regression model.
+
+Dashed lines represent the performance of our Decision Tree model.
+
+The closer a curve is to the top-left corner, the better the model's ability to distinguish between functional, non-functional, and wells requiring repair. The area under each curve (AUC score) indicates the overall performance. A higher AUC suggests that the model has better predictive accuracy.
+
+These curves help us visually compare which model is better at predicting the well conditions. In this case, you can see that both models perform reasonably well, with the Decision Tree showing slightly better performance across some classes.
+
+![alt text](image-2.png)
+
 
 #### Limitations:
 - The data might be imbalanced, which could affect the performance of the classifier.
